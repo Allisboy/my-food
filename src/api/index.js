@@ -1,5 +1,3 @@
-import axios from 'axios';
-
 const options = {
     method: 'GET',
     url: 'https://the-vegan-recipes-db.p.rapidapi.com/',
@@ -10,7 +8,7 @@ const options = {
   };
  export const getFood=  ()=>{
       
-          return axios.request(options);
+          // return axios.request(options);
           
      
 }

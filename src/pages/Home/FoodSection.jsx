@@ -20,14 +20,14 @@ const FoodSection=()=>{
     const foodData=FoodApi
     // console.log(foodData);
     return (
-        <div className='p-3 md:flex-row grid-flow-row items-center grid md:grid-flow-col md:grid-rows-3'>
+        <div className='p-3 lg:flex-row  grid-flow-row items-center grid md:grid-rows-4 md:grid-flow-col lg:grid-flow-col lg:grid-rows-3'>
             {foodData.map((foods,index)=>{
                 if( index >= 0 && index <= 10){
                 {/* console.log(index) */}
                 return <FoodCard key={index} data={foods}/>
                 }
             })}
-            <div className="hidden md:flex flex-col items-center justify-center">
+            <div className="hidden lg:flex flex-col items-center justify-center">
                 <div>
                     <Link to="/foodGalleries"
                     className='p-4 bg-blue-500 text-center text-white rounded-lg'>view more {'>>'}</Link>
